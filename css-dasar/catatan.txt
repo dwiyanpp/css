@@ -5,3 +5,13 @@
  - font-size
  - line-height
  - font-family
+
+
+ * Text Styling :
+ - color
+ - text-align
+ - text-indent
+ - text-decoration
+ - text-transform
+ - letter-spacing
+ - word spacing
