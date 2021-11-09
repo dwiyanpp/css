@@ -7,7 +7,7 @@
  - font-family
 
 
- * Text Styling :
+* Text Styling :
  - color
  - text-align
  - text-indent
@@ -15,3 +15,9 @@
  - text-transform
  - letter-spacing
  - word spacing
+
+* Backround
+ - background-color
+ - background-image
+ - background-repeat
+ - background-position
