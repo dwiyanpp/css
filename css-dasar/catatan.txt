@@ -16,7 +16,7 @@
  - letter-spacing
  - word spacing
 
-* Backround
+* Backround :
  - background-color
  - background-image
  - background-repeat
