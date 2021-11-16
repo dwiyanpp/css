@@ -26,3 +26,14 @@
  - HTML
  - Id
  - Class
+
+* Pseudo Class :
+ - :link
+ - :hover
+ - :active
+ - :visited
+ - :first-child
+ - :last-child
+ - :nth-child(n) -> (n, odd, even)
+ - :first-of-type
+ - :last-of-type
