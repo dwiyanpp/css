@@ -21,3 +21,8 @@
  - background-image
  - background-repeat
  - background-position
+
+* Selector : 
+ - HTML
+ - Id
+ - Class
