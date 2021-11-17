@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specificity</title>
+    <style>
+        ol#makananTersedia li {
+            color: green;
+        }
+
+        .laku {
+            color: red; /* tidak akan berubah warna karena kalah beban berat */
+        }
+
+        ol#makananTersedia li.laku {
+            color: red; /* Setelah menggunakan beban yang lebih berat */
+        }
+
+    </style>
 </head>
 <body>
     
+    <ol type="1" id="makananTersedia">
+        <li>Roti</li>
+        <li class="laku">Nasi Goreng</li>
+        <li>Mie Goreng</li>
+        <li>Mie Rebus</li>
+        <li>Nasi Uduk</li>
+    </ol>
+
 </body>
 </html>
