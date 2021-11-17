@@ -40,3 +40,6 @@
 
 * Inheritance
  - inherite
+
+* Specificity
+ - inline id class elemen : 0 0 0 0
