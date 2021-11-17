@@ -25,6 +25,10 @@
         p.paragraf2 {
             line-height: 21px;
         }
+
+        tr.ket:nth-child(even) {
+            background-color: rosybrown;
+        }
     </style>
 </head>
 <body>
@@ -35,5 +39,37 @@
 
     <p class="paragraf2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur totam necessitatibus quasi ratione quibusdam earum alias tempora, consequuntur ullam aspernatur incidunt itaque blanditiis dicta illum molestiae corporis quis laborum debitis? Pariatur, ullam! Deleniti animi facilis nulla id consequuntur ut fuga ullam doloremque molestiae voluptatum? Velit tenetur at veniam repudiandae iure! Tempore, sit est? Cupiditate laboriosam, itaque fugiat ea asperiores, voluptas minima consequuntur, autem exercitationem nostrum mollitia consequatur dolor quasi accusantium ut architecto natus pariatur nesciunt excepturi iste eum? Asperiores error nostrum quia a. Omnis corporis doloribus possimus impedit? Officiis.</p>
     
+    <table border="1" cellpadding="22" cellspacing="0">
+        <tr>
+            <th rowspan="2">Nama</th>
+            <th colspan="2">Keterangan</th>
+        </tr>
+        <tr>
+            <th>Jurusan</th>
+            <th>Semester</th>
+        </tr>
+        <tr class="ket">
+            <td>Dwiyan</td>
+            <td>Sistem Informasi</td>
+            <td>Tiga</td>
+        </tr>
+        <tr class="ket">
+            <td>Anisa</td>
+            <td>Sistem Informasi</td>
+            <td>Tiga</td>
+        </tr class="ket">
+        <tr class="ket">
+            <td>Mety</td>
+            <td>Sistem Informasi</td>
+            <td>Tiga</td>
+        </tr>
+        <tr class="ket">
+            <td>Irfan</td>
+            <td>Sistem Informasi</td>
+            <td>Tiga</td>
+        </tr>
+    </table>
+
+
 </body>
 </html>
