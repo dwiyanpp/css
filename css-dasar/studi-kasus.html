@@ -4,77 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS DASAR</title>
+    <title>Data Mahasiswa</title>
     <style>
         body {
-            background-image: url(gambar/bg.png);   
-        }
-
-        h1 {
-            text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 28px;
-            font-variant: small-caps;
-            font-style: italic;
+            background-color: honeydew;
+            color: rgb(59, 59, 59);
         }
 
-        p.paragraf1 {
-            text-indent: 20px;
+        h1.title, p.subjudul {
+            text-align: center;
         }
 
-        p.paragraf2 {
-            line-height: 21px;
+        p.subjudul {   
+            font-size: 18px;
         }
 
-        tr.ket:nth-child(even) {
-            background-color: rosybrown;
+        table {
+            margin: auto;
         }
 
-        tr.ket:hover {
-            font-style: italic;
-            font-weight: bold;
+        td:last-child {
+            text-align: center;
+        }
+
+        tr.mahasiswa:nth-child(even) {
+            background-color: rgb(255, 248, 184);
+        }
+
+        a {
+            color: inherit;
+        }
+
+        a:hover {
+            color:rgb(230, 210, 33);   
+        }
+
+        a:active {
+            color: saddlebrown;
         }
     </style>
-</head>
+</head> 
 <body>
 
-    <h1>Studi Kasus Css Dasar</h1>
+    <h1 class="title">Data Mahasiswa</h1>
 
-    <p class="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam repudiandae aliquam laboriosam sint ea quod fugit aut veniam ab accusantium consequatur expedita odit temporibus et culpa, voluptate delectus ipsum ratione commodi neque. Doloribus aspernatur natus exercitationem, placeat pariatur, saepe, iste sint in autem possimus itaque quibusdam vitae.</p>
+    <p class="subjudul">Data mahasiswa jurusan Sistem Informasi semester 3</p>
 
-    <p class="paragraf2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur totam necessitatibus quasi ratione quibusdam earum alias tempora, consequuntur ullam aspernatur incidunt itaque blanditiis dicta illum molestiae corporis quis laborum debitis? Pariatur, ullam! Deleniti animi facilis nulla id consequuntur ut fuga ullam doloremque molestiae voluptatum? Velit tenetur at veniam repudiandae iure! Tempore, sit est? Cupiditate laboriosam, itaque fugiat ea asperiores, voluptas minima consequuntur, autem exercitationem nostrum mollitia consequatur dolor quasi accusantium ut architecto natus pariatur nesciunt excepturi iste eum? Asperiores error nostrum quia a. Omnis corporis doloribus possimus impedit? Officiis.</p>
-    
-    <table border="1" cellpadding="22" cellspacing="0">
+    <table border="2" cellpadding="12" cellspacing="0">
         <tr>
             <th rowspan="2">Nama</th>
-            <th colspan="2">Keterangan</th>
+            <th colspan="3">Keterangan</th>
         </tr>
         <tr>
-            <th>Jurusan</th>
-            <th>Semester</th>
+            <th>Kelas</th>
+            <th>Jenis Kelamin</th>
+            <th>Detail</th>
         </tr>
-        <tr class="ket">
-            <td>Dwiyan</td>
-            <td>Sistem Informasi</td>
-            <td>Tiga</td>
+        <tr class="mahasiswa">
+            <td>Dwiyan Purbo Prastio</td>
+            <td>12.1H.07</td>
+            <td>Laki-laki</td>
+            <td><a href="#">Lihat Detail</a></td>
         </tr>
-        <tr class="ket">
+        <tr class="mahasiswa">
+            <td>Mety Pratiwi</td>
+            <td>12.1H.07</td>
+            <td>Perempuan</td>
+            <td><a href="#">Lihat Detail</a></td>
+        </tr>
+        <tr class="mahasiswa">
+            <td>Muhammad Irfan</td>
+            <td>12.1H.07</td>
+            <td>Laki-laki</td>
+            <td><a href="#">Lihat Detail</a></td>
+        </tr>
+        <tr class="mahasiswa">
+            <td>Rifanto</td>
+            <td>12.1H.07</td>
+            <td>Laki-laki</td>
+            <td><a href="#">Lihat Detail</a></td>
+        </tr>
+        <tr class="mahasiswa">
+            <td>Eka Chandra</td>
+            <td>12.1H.07</td>
+            <td>Laki-laki</td>
+            <td><a href="#">Lihat Detail</a></td>
+        </tr>
+        <tr class="mahasiswa">
             <td>Anisa</td>
-            <td>Sistem Informasi</td>
-            <td>Tiga</td>
-        </tr class="ket">
-        <tr class="ket">
-            <td>Mety</td>
-            <td>Sistem Informasi</td>
-            <td>Tiga</td>
-        </tr>
-        <tr class="ket">
-            <td>Irfan</td>
-            <td>Sistem Informasi</td>
-            <td>Tiga</td>
+            <td>12.1H.07</td>
+            <td>Laki-laki</td>
+            <td><a href="#">Lihat Detail</a></td>
         </tr>
     </table>
-
-
+    
 </body>
 </html>
