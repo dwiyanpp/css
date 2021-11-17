@@ -37,3 +37,6 @@
  - :nth-child(n) -> (n, odd, even)
  - :first-of-type
  - :last-of-type
+
+* Inheritance
+ - inherite
