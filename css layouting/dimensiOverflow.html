@@ -8,19 +8,73 @@
     <style>
         body {
             background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .card {
             width: 200px;
             height: 250px;
             overflow: hidden;
+            background-image: url(gambar/bg.png);
+            border-radius: 8px;
+        }
+
+        .judul h1 {
+            text-align: center;
+            font-size: 24px;
+            text-decoration: underline;
+        }
+
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            width: 100%;
+            margin-left: -22px;
+            margin-top: -40px;
+        }
+
+        .main ul li p {
+            display: inline-block;
+            padding-bottom: -80px;
+        }
+
+        .main ul:first-child li {
+            margin-top: 20px;
+        }
+
+        .btn {
+            width: 100%;
+            height: 54px;
+            text-align: center;
+            display: inline-block;
+            background-color: chocolate;
+        }
+
+        .btn a {
+            margin-top: 18px;
+            display: inline-block;
+            color: rgb(247, 245, 245);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <img src="gambar/bg.png" alt="gambar">
+        <div class="judul">
+            <h1>Kartu Seminar</h1>
+        </div>
+        <div class="main">
+            <ul>
+                <li><p>Dwiyan Purbo Prastio</p></li>
+            </ul>
+            <ul>
+                <li><p>Sistem Informasi</p></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <a href="#">Lihat QR</a>
+        </div>
     </div>
     
 </body>
