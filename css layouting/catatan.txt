@@ -1,2 +1,7 @@
 Display :
  - display -> inline, inline-block, block, none
+
+Dimensi & Overflow :
+ - width
+ - height
+ - overflow
