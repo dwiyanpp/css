@@ -5,3 +5,9 @@ Dimensi & Overflow :
  - width
  - height
  - overflow
+
+Box Model :
+ - margin
+ - padding
+ - border
+ -box-sizing
