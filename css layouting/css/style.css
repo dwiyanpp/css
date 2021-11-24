@@ -4,7 +4,6 @@ body {
 
 #container {
     width: 80%;
-    height: 600px;
     background-color: rgb(252, 61, 61);
     margin: auto;
 }
@@ -39,6 +38,16 @@ body {
 }
 
 .main {
-    
+    padding: 32px 28px;
+}
+
+.main p {
+    text-align: justify;
+    text-indent: 28px;
+    line-height: 28px;
+}
+
+.main p:last-child {
+    color: white;
 }
 
