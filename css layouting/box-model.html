@@ -6,36 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
     <style>
+        div{
+            width: 600px;
+            box-sizing: border-box;
+        }
+
         .satu {
-            width: 200px;
-            height: 200px;
-            background-color: orange;
-            margin-top: 40px;
-            margin-left: 100px;
-            margin-bottom: 150px;
+            background-color: aqua;
+            padding: 30px 10px 100px 0;
+            margin: 40px auto 50px;
         }
 
         .dua {
-            width: 100px;
-            height: 100px;
-            background-color: green;
-            margin-top: 50px;
+             background-color: blueviolet;
+             padding: 10px 20px 10px 20px;
+             border: 10px dashed greenyellow;
         }
-
-        .tiga {
-            width: 50px;
-            height: 50px;
-            background-color: aqua;
-        }
-
-        .satu, .dua, .tiga { display: inline-block; }
     </style>
 </head>
 <body>
 
-    <div class="satu"></div>
-    <div class="dua"></div>
-    <div class="tiga"></div>
+   <div class="satu">
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolores perferendis, velit repudiandae non cupiditate sunt quo assumenda similique atque aliquid nisi accusantium officiis, provident alias deleniti saepe. Ad amet rerum reiciendis vitae quae, laborum dolore laboriosam veritatis quas animi, porro hic non! Voluptate eveniet nesciunt dolorum nisi. Sint quod ad iste sequi. Officia quam eveniet iste laudantium! Quo qui doloribus ipsam quasi ducimus delectus distinctio cupiditate officiis dolores, vero neque ipsa consequuntur, odit veritatis laudantium eaque officia obcaecati odio, rerum ad? Quisquam sunt non voluptate autem minima sint sed perspiciatis distinctio tempora voluptatibus, consequuntur veritatis, fuga id inventore veniam?</p>
+   </div>
+
+   <div class="dua">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit rerum ut, labore corporis expedita, illo voluptatem earum temporibus, veritatis harum placeat vitae nulla? Veritatis dolores quas, accusamus recusandae sit laboriosam ipsam animi sequi molestiae, accusantium voluptatibus! Perferendis saepe voluptates incidunt! Sunt iure commodi cum perspiciatis, rem minima! Minima, expedita?</p>
+   </div>
     
 </body>
 </html>
