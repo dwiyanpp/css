@@ -16,7 +16,7 @@
  - letter-spacing
  - word spacing
 
-* Backround :
+* Backround : => unsplash, subtle pattern.
  - background-color
  - background-image
  - background-repeat
