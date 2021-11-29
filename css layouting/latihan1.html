@@ -5,10 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <style>
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+
+
+        body {
+            font: 16px/28px arial, sans-serif;
+            background-color: rgb(187, 186, 186);
+            color: #333;
+        }
+
+        .container {
+            width: 800px;
+            margin: auto;
+            background-color: rgb(247, 247, 247);
+        }
+
+        .header {
+            padding: 24px;
+            padding-bottom: 12px;
+        }
+
+        .header .judul {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .header ul li {
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: salmon;
+            padding: 3px;
+        }
+
+        .header a:hover {
+            background-color: lightskyblue;
+            color: rgb(247, 247, 247);
+        }
+
+        .hero {
+            height: 320px;
+            background-image: url(gambar/komputer.jpg);
+            background-size: cover;
+            background-position: 0 -140px;
+            border-top: 3px solid salmon;
+            border-bottom: 3px solid rgb(128, 128, 236);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content .penulis {
+            font-size: 12px;
+        }
+
+        .content .penulis a {
+            color: salmon;
+            text-decoration: none;
+        }
+
+        .content p {
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+
+        .footer {
+            background-color: rgb(37, 37, 37);
+        }
+
+        .footer .copy {
+            color: rgb(247, 247, 247);
+            text-align: center;
+            font-size: 13px;
+            padding: 8px;
+        }
+
+    </style>
 </head>
 <body>
 
-    
+   <div class="container">
+       <div class="header">
+           <h1 class="judul">Mywebsite</h1>
+           <ul>
+               <li><a href="#">home</a></li>
+               <li><a href="#">about</a></li>
+               <li><a href="#">product</a></li>
+               <li><a href="#">services</a></li>
+               <li><a href="#">contact</a></li>
+           </ul>
+       </div>
+       <div class="hero">
+
+       </div>
+       <div class="content">
+           <h2>Tips sehat dengan berolahraga</h2>
+           <p class="penulis">Ditulis oleh <a href="#">Dwiyan Purbo Prastio</a></p>
+
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quidem est similique quisquam labore explicabo illo delectus, error nemo? Veritatis accusamus omnis blanditiis eum voluptatum ipsam odit fuga, dolorem saepe ut! Cum excepturi eligendi minima hic esse tenetur beatae ipsa officiis quibusdam veniam accusantium blanditiis ut aperiam, est eum optio?</p>
+
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, earum? Ea, minus fugiat accusantium totam repudiandae, eum amet aliquid veritatis est, quo neque commodi! Dolores quia sequi aut sed. Velit, eligendi modi! Porro, reprehenderit maiores. Nostrum, nesciunt. Assumenda ea eos iste veritatis quo. Doloremque atque placeat aspernatur vitae reprehenderit quaerat, architecto voluptatum, sed voluptatem aliquam blanditiis debitis nulla cupiditate expedita voluptas fugiat veniam sapiente dolorem adipisci veritatis repellendus et alias illum! Nihil molestias aut quos voluptates, ex dolorum mollitia quisquam eligendi libero, nam soluta eum laudantium? Dicta minima aspernatur sunt hic eveniet aperiam ratione, in commodi incidunt dignissimos, laboriosam numquam!</p>
+
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni delectus distinctio explicabo ratione, natus deserunt, at molestiae alias rerum animi illum. Unde minima atque odio, rem eius dolorum iste nam. Quos debitis voluptates dolorem accusamus velit magni quidem molestias fugiat rem. Quod necessitatibus harum rerum, beatae praesentium deserunt culpa impedit laborum soluta fugiat voluptates modi dolorem neque aliquam ab quos repellendus sunt? Corporis numquam consequatur ex optio assumenda expedita consequuntur, aut tenetur fugit unde perspiciatis? Eveniet, eos veritatis. Similique?</p>
+       </div>
+       <div class="footer">
+           <p class="copy">Copyright 2021. Dwiyan Purbo Prastio</p>
+       </div>
+   </div>
     
 </body>
 </html>
