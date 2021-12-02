@@ -51,3 +51,12 @@ body {
     color: white;
 }
 
+
+
+.img {
+    height: 400px;
+    width: 400px;
+    background-image: url(../gambar/computer.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
