@@ -10,7 +10,8 @@ body {
 
 .header h1 {
     text-align: center;
-    padding-top: 48px;
+    padding: 48px;
+    padding-bottom: 12px;
     color: rgb(241, 239, 239);
 }
 
@@ -21,7 +22,6 @@ body {
 
 .nav {
     background-color: rgb(184, 143, 68);
-    margin-top: 48px;
 }
 
 .nav ul li a {
@@ -38,7 +38,7 @@ body {
 }
 
 .main {
-    padding: 32px 28px;
+    padding: 36px;
 }
 
 .main p {
@@ -59,4 +59,32 @@ body {
     background-image: url(../gambar/computer.jpg);
     background-size: cover;
     border-radius: 20px;
+    margin-bottom: 48px;
+    margin-left: 36px;
+}
+
+
+.btn {
+    width: 200px;
+    height: 300px;
+    background-color:grey;
+    margin-left: 36px;
+    margin-bottom: 48px;
+}
+
+.main-btn {
+    height: 260px;
+    background-color: rgb(211, 200, 98);
+}
+
+.btn-detail {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-image: url(../gambar/bg.png)
+}
+
+.btn-detail a {
+    text-decoration: none;
+    color: red;
 }
