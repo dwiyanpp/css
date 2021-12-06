@@ -11,43 +11,149 @@
             margin: 0;
         }
 
+        * {
+            font: 16px/18px arial, helvetica;
+        }
+
         .container {
             width: 900px;
-            height: 400px;
             background-color: aqua;
             margin: auto;
+            border: 2px solid black;
         }
 
-        .kotak1, .kotak2, .kotak3 {
-            width: 100px;
-            height: 100px;
-            background-color: greenyellow;
-            margin: 10px;
+        .kotak-1, .kotak-2 , .kotak-3, .kotak-4 {
+            margin: 8px;
         }
 
-        .kotak2 {
-            float: right;
+        .kotak-1 {
+            width: 300px;
+            height: 380px;
+            background-color: slateblue;
+            float: left;
         }
 
-        p {
+        .kotak-2 {
+            width: 150px;
+            height: 380px;
+            background-color: saddlebrown;
+            float: left;
+        }
+
+        .kotak-3 {
+            width: 150px;
+            height: 380px;
+            background-color: seagreen;
+            float: left;
+        }
+
+        .kotak-4 {
+            width: 230px;
+            height: 380px;
+            background-color: crimson;
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+
+
+
+
+        .main {
+            background-color: rgb(228, 226, 226);
+            padding: 48px;
+        }
+
+        .card1, .card2, .card3 {
+            width:200px;
+            height: 300px;
+            background-color: hotpink;
+            margin: 28px;
+            float: left;
+        }
+
+        .header-card {
+            width:200px;
+            height: 50px;
+            background-color: rgb(241, 173, 207);
+        }
+
+        .header-card h1 {
             text-align: center;
-            line-height: 100px;
+            line-height: 50px;  
+            font-weight: bold;
+            font-size: 18px;
         }
+
+        .main-card {
+            height: 210px;
+        }
+
+        .btn {
+            height: 40px;
+            background-color: rgb(126, 93, 109);
+            text-align: center;
+        }
+
+        .btn a {
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 40px;
+            color: #fff;
+        }
+
+        .clear {
+            clear: both;
+        }
+        
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="kotak1">
-            <p>1</p>
-        </div>
-        <div class="kotak2">
-            <p>2</p>
-        </div>
-        <div class="kotak3">
-            <p>3</p>
-        </div>
+        <div class="kotak-1"></div>
+        <div class="kotak-2"></div>
+        <div class="kotak-3"></div>
+        <div class="kotak-4"></div>
+        <div class="clear"></div>
     </div>
+
+    <div class="main">
+        <div class="card1">
+            <div class="header-card">
+                <h1>Kartu Sehat</h1>
+            </div>
+            <div class="main-card"></div>
+            <div class="btn">
+                <a href="#">Lihat Detail</a>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="header-card">
+                <h1>Kartu Sehat</h1>
+            </div>
+            <div class="main-card"></div>
+            <div class="btn">
+                <a href="#">Lihat Detail</a>
+            </div>
+        </div>
+
+        <div class="card3">
+            <div class="header-card">
+                <h1>Kartu Sehat</h1>
+            </div>
+            <div class="main-card"></div>
+            <div class="btn">
+                <a href="#">Lihat Detail</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
     
 </body>
 </html>
