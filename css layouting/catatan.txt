@@ -20,3 +20,5 @@ Latihan 1
 Float :
 clear -> https://nicolasgallagher.com/micro-clearfix-hack/
 
+Position :
+
