@@ -50,9 +50,16 @@
             border-spacing: 0;
         }
 
+
+
+
+
+        body {
+            font: 16px/18px arial, helvetica;
+        }
+
         .container {
             width: 80%;
-            height: 700px;
             margin: auto;
             background-color: #ebfbea;
         }
@@ -63,12 +70,83 @@
             background-size: cover;
             background-position: 0 -300px;
         }
+
+        nav {
+            background-color: rgb(233, 219, 219);
+            margin-bottom: 28px;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            padding: 28px;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(50, 51, 51);
+        }
+
+        nav ul li a:hover {
+            color: rgb(180, 185, 185);
+        }
+
+        main {
+            padding: 28px;
+        }
+
+        .judul h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 28px;
+        }
+
+        .isi {
+            width: 50%;
+            float: left;
+            text-align: justify;
+            margin-right: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <div class="img"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="#">information</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="judul">
+                <h1>Alat Moda Transportasi</h1>
+            </section>
+            <section class="isi">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit assumenda esse sapiente nobis eius sint fugiat eveniet ea sunt dolorem minima, veritatis commodi dolorum provident labore sit. Vero ea consectetur doloremque blanditiis quae libero veniam mollitia ratione, dicta provident neque dignissimos quam praesentium in animi odit placeat ipsa molestiae veritatis. Ex nobis maiores obcaecati impedit debitis? Nemo, id. Fugiat distinctio esse nemo aliquam dicta officia laudantium voluptatum eveniet eligendi impedit. Tempore vero magnam adipisci ullam, saepe iste ipsum aspernatur porro? Adipisci error dolor, beatae modi debitis, perspiciatis obcaecati commodi accusantium iusto tempore perferendis harum quas ipsum aspernatur minus, voluptatem voluptates Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus provident a quos doloribus, distinctio non in inventore dolores aperiam id hic labore temporibus quaerat corporis, maiores aliquid nobis veritatis? Omnis esse deserunt molestias voluptatum molestiae facere laboriosam minima aut optio, libero eligendi quasi dolor. Laborum alias enim, dignissimos exercitationem omnis et. Fugiat dolorum iure ipsa voluptatum voluptatibus maxime ab adipisci excepturi, earum dignissimos reprehenderit ducimus distinctio suscipit soluta molestias! Quia molestiae tempora porro eos excepturi incidunt corrupti quibusdam, assumenda asperiores sunt et dignissimos eveniet suscipit possimus, labore sed veniam cupiditate itaque totam. Ab, repellendus alias architecto commodi quis optio consectetur quod deleniti aliquid odit reiciendis quisquam fuga itaque corrupti!</p>
+            </section>
+            <section class="isi2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quia, placeat veritatis at, omnis illo inventore ipsa odit doloribus ab dolor harum. Vitae, laudantium quam soluta molestias consectetur voluptatum impedit quos. Inventore maiores placeat tempora aliquid quo quos repellendus, temporibus nemo eligendi nisi, voluptates beatae soluta odio architecto! Deserunt odio nesciunt eligendi. Vitae, nisi, iusto placeat veritatis adipisci magnam distinctio tempora eligendi libero possimus non beatae ratione porro fuga, veniam laboriosam quo velit dignissimos minima eos quos eius. Inventore, quidem.</p>
+            </section>
+            <section class="clear"></section>
+        </main>
     </div>
     
 </body>
