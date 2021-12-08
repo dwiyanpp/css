@@ -8,6 +8,32 @@ body {
     margin: auto;
 }
 
+.kotak {
+    background-color: rgb(34, 34, 34);
+    opacity: .7;
+    position: fixed;
+    top: 100px;
+    bottom: 150px;
+    left: 150px;
+    right: 150px;
+}
+
+.bulat {
+    width: 30px;
+    height: 30px;
+    background-color: blanchedalmond;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+}
+
+.bulat p {
+    text-align: center;
+    line-height: -200px;
+    font-size: 32px;
+}
+
 .header h1 {
     text-align: center;
     padding: 48px;
@@ -22,6 +48,11 @@ body {
 
 .nav {
     background-color: rgb(184, 143, 68);
+    position: fixed;
+    right: 0;
+    left: 0;
+    width: 79.1%;
+    margin: auto;
 }
 
 .nav ul li a {
@@ -39,6 +70,7 @@ body {
 
 .main {
     padding: 36px;
+    margin-top: 48px;
 }
 
 .main p {

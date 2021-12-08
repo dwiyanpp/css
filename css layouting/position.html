@@ -6,30 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
+        body {
+            height: 1800px;
+        }
+
         div {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
+        }
+        .satu, .tiga, .lima {
+            text-align: center;
         }
         .satu {
             background-color: yellowgreen;
+            border: 2px solid pink;
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
         }
         .dua {
             background-color: brown;
-            margin-top: 0px;
-            position: relative;
-            top: 30px;
-            left: 8px;
         }
         .tiga {
             background-color: cadetblue;
+            clear: both;
+            position: relative;
+            bottom: 40px;
+            left: 60px;
+        }
+
+
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 2px solid green;
+            margin: auto;
+            margin-bottom: 120px;
+            position: relative;
+        }
+
+        .empat, .lima, .enam {
+            margin: auto;
+        }
+
+        .empat {
+            background-color: blueviolet;
+        }
+
+        .lima {
+            background-color: crimson;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .enam {
+            background-color: darkolivegreen;
         }
     </style>
 </head>
 <body>
 
-    <div class="satu"></div>
+    <div class="satu">
+        <p>Ini position fixed</p>
+    </div>
     <div class="dua"></div>
-    <div class="tiga"></div>
+    <div class="tiga">
+        <p>Ini position relative</p>
+    </div>
+
+    <div class="container">
+        <div class="empat"></div>
+        <div class="lima">
+            <p>Ini position absolute</p>
+        </div>
+        <div class="enam"></div>
+    </div>
     
 </body>
 </html>
