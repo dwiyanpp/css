@@ -30,8 +30,11 @@ body {
 
 .bulat p {
     text-align: center;
-    line-height: -200px;
-    font-size: 32px;
+    font-size: 18px;
+    color: #000;
+    position: absolute;
+    top: -13px;
+    left: 8px;
 }
 
 .header h1 {

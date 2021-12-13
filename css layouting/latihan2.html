@@ -93,6 +93,8 @@
 
         main {
             padding: 28px;
+            width: 70%;
+            float: left;
         }
 
         .judul h1 {
@@ -113,11 +115,41 @@
         .clear {
             clear: both;
         }
+
+        aside {
+            padding: 75px;
+        }
+
+        aside h3 {
+            padding-bottom: 18px;
+        }
+
+
+
+
+
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+        .cf {
+            *zoom: 1;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container cf">
         <div class="img"></div>
         <nav>
             <ul>
@@ -147,6 +179,10 @@
             </section>
             <section class="clear"></section>
         </main>
+        <aside>
+            <h3>Tentang Kami : </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit soluta voluptate sapiente obcaecati architecto placeat animi veritatis eos consequatur hic possimus, ratione vitae pariatur at ipsum vero, non nisi omnis quis odit nemo nihil? Possimus ipsum ullam ex nulla qui.</p>
+        </aside>
     </div>
     
 </body>
