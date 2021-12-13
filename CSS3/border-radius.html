@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .kotak1 {
+            border: 8px solid rgb(105, 105, 105);
+            border-radius: 8px;
+        }
+
+        .kotak2 {
+            border: 8px solid rgb(238, 86, 86);
+            border-top-left-radius: 30%;
+            border-bottom-right-radius: 30%;
+        }
+
+        .kotak3 {
+            border: 8px solid green;
+            border-radius: 50%;
+        }
+
+        .kotak4 {
+            border: 8px solid blue;
+            border-radius: 100px 100px 0 0;
+            height: 90px;
+            margin-bottom: 80px;
+        }
+
+        .kotak5 {
+            border: 8px solid blue;
+            border-radius: 0 0 70px 70px;
+            height: 60px;
+        }
+
+        .kotak6 {
+            border: 8px solid pink;
+            border-radius: 50% 0 50% 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kotak1"></div>
+    <div class="kotak2"></div>
+    <div class="kotak3"></div>
+    <div class="kotak4"></div>
+    <div class="kotak5"></div>
+    <div class="kotak6"></div>
+    
+</body>
+</html>
