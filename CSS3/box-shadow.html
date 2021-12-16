@@ -9,16 +9,76 @@
         .kotak1 {
             width: 200px;
             height: 200px;
-            margin: 50px auto;
             background-color: violet;
             border-radius: 20px;
             box-shadow: 5px 0 3px rgba(0, 0, 0, .65);
+            position: relative;
+        }
+
+        .kotak2 {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 20px 0 20px 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            box-shadow: -3px -1px 3px rgba(255, 255, 255, 0.8);
+        }
+
+        .kotak3 {
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            border-radius: 50%;
+            box-shadow: 5px 5px 2px 4px black, -5px -5px 2px 4px green, 0 0 0 20px red;
+        }
+
+        .kotak3:hover {
+            background-color: red;
+            box-shadow: -5px -5px 2px 4px black, 5px 5px 2px 4px green, 0 0 0 20px rebeccapurple;
+
+        }
+
+        .kotak1, .kotak3, .tombol {
+            display: inline-block;
+            margin: 20px 0 0 80px;
+        }
+
+
+        .tombol {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .tombol:hover {
+            background-color: green;
+            box-shadow: 0 20px 0 -12px black;
+            color: white;
+        }
+
+        .tombol p {
+            line-height: 200px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: capitalize;
         }
     </style>
 </head>
 <body>
 
-    <div class="kotak1"></div>
+    <div class="kotak1">
+        <div class="kotak2"></div>
+    </div>
+
+    <div class="kotak3"></div>
+
+    <div class="tombol">
+        <p>Tekan agar menjadi hijau</p>
+    </div>
     
 </body>
 </html>
