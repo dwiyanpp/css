@@ -5,3 +5,6 @@ opacity :
 RGBA & HSLA :
 
 box-shadow :
+
+text-shadow :
+
