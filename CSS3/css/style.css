@@ -1,0 +1,118 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  akhir css reset */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+.container {
+    background-color: rgb(248, 248, 248);
+    height: 800px;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 32px;
+}
+
+.judul {
+    float: left;
+    position: relative;
+}
+
+.judul h1 {
+    font-size: 48px;
+    color: rgb(111, 188, 236);
+}
+
+.judul .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right bottom,rgb(255, 255, 0), rgb(206, 245, 33));
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: -35px;
+}
+
+.akun {
+    float: right;
+    margin-right: 80px;
+}
+
+.akun input {
+    height: 18px;
+    border-radius: 9px;
+    padding: 8px;
+    font-size: 18px;
+    border-color:rgba(111, 188, 236, .5);
+    border-width: 3px;
+}
+
