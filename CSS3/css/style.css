@@ -63,6 +63,20 @@ table {
     *zoom: 1;
 }
 
+@font-face {
+    font-family: "yuji";
+    src: url(../font/YujiHentaiganaAkebono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url(../font/woff/alexbrush-regular-webfont.woff2) format('woff2'),
+         url(../font/woff/alexbrush-regular-webfont.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -71,7 +85,7 @@ body {
 
 
 .container {
-    background: linear-gradient(to bottom left ,rgb(248, 248, 248),rgb(235, 176, 176));
+    background: linear-gradient(to bottom left ,rgb(248, 248, 248) 40%,rgb(235, 176, 176));
     height: 800px;
 }
 
@@ -88,6 +102,8 @@ header {
 .judul h1 {
     font-size: 48px;
     color: rgb(111, 188, 236);
+    font-family: 'alex_brushregular';
+    font-weight: bold;
 }
 
 .judul .circle {
@@ -124,5 +140,49 @@ header {
 
 .head {
     position: relative;
+}
+
+
+
+
+
+
+main {
+    height: 600px;
+    padding: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 400px;
+    background-color: rgb(214, 214, 214);
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card h1 {
+    font-family: "yuji";
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 24px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+.card p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    background-image: linear-gradient(to left top,rgb(255, 255, 0), rgb(131, 109, 109));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
 }
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Face</title>
+    <style>
+        @font-face {
+            font-family: "arial-brush";
+            src: url(font/AlexBrush-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            src: url(font/Roboto-Light.ttf);
+            font-weight: 200;
+        }
+
+        .container {
+            width: 90%;
+            height: 600px;
+            background-image: linear-gradient(to bottom right,grey 65%, white);
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: "arial-brush", verdana;
+            font-weight: bold;
+            font-size: 52px;
+        }
+
+        .container p {
+            font-family: "Roboto";
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello, World</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nesciunt corrupti quos reiciendis cupiditate, accusantium, nemo fuga dolor ab incidunt, autem inventore rerum quo eveniet voluptatem id ad maiores voluptatibus!</p>
+    </div>
+    
+</body>
+</html>
