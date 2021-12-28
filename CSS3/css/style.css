@@ -160,6 +160,18 @@ main {
     box-sizing: border-box;
     position: relative;
     box-shadow: 0 4px 5px 1px rgba(189, 190, 190, .7);
+    filter: brightness(40%) sepia(1);
+}
+
+.card:hover {
+    width: 200px;
+    height: 400px;
+    background-color: rgb(214, 214, 214);
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 4px 5px 1px rgba(189, 190, 190, .7);
+    filter: blur(0);
 }
 
 .card h1 {

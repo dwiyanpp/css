@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        @font-face {
+            font-family: "pushter";
+            src: url(font/Pushster-Regular.ttf)
+        }
+
+        .kotak {
+            width: 100px;
+            height: 100px;
+            margin: 80px auto;
+            background-color: rgb(160, 73, 73);
+            transition: 2s;
+        }
+
+        .kotak:hover {
+            transform: scale(5, 1.5);
+        }
+
+        .kotak p {
+            color: #fff;
+            display: none;
+            font-family: "pushter";
+            text-align: center;
+            font-size: 8px;
+        }
+
+        .kotak:hover p {
+            display: block;
+            line-height: 100px;
+        }
+
+        .kotak2 {
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+        }
+
+
+        .card {
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            margin: auto;
+            transition: 2s;
+            position: relative;
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            background-color: cornsilk;
+            margin: auto;
+            border-radius: 50%;
+            position: absolute;
+            top: 65px;
+            left: 65px;
+        }
+
+        .card:hover {
+            transform: rotate(40deg) skew(30deg) translate(30px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kotak">
+        <p>Dwiyan Purbo Prastio</p>
+        <div class="kotak2">
+            <p>Mety Pratiwi</p>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="circle"></div>
+    </div>
+    
+</body>
+</html>
