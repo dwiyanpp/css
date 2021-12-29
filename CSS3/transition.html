@@ -9,23 +9,46 @@
         * {
             margin: 0; padding: 0;
         }
-        .card {
-            width: 200px;
-            height: 200px;
-            background-color: salmon;
-            transition: 3s;
+
+        .container {
+            width: 700px;
+            border: 2px solid rgba(39, 39, 39, .6);
+            margin: 20px auto;
+            padding: 12px;
         }
 
+        .card {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            text-align: center;
+            line-height: 100px;
+            margin-bottom: 8px;
+        }
+
+        .card1 { transition:  3s ease 500ms; }
+        .card2 { transition:  3s ease-in 500ms; }
+        .card3 { transition:  3s ease-out 500ms; }
+        .card4 { transition:  3s ease-in-out 500ms; }
+        .card5 { transition:  3s linear 500ms; }
+        .card6 { transition:  3s cubic-bezier(0.42, 0, 0.63, 1.21) 500ms; }
+
         .container:hover .card {
-            transform: rotate(180deg);
-            margin-left: 500px;
+            transform: rotate(720deg);
+            margin-left: 600px;
+            background-color: rgb(253, 70, 49);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="card"></div>
+        <div class="card card1">Ease</div>
+        <div class="card card2">Ease-in</div>
+        <div class="card card3">Ease-out</div>
+        <div class="card card4">Ease-in-out</div>
+        <div class="card card5">Linear</div>
+        <div class="card card6">Cubic-bezier</div>
     </div>
 
     
