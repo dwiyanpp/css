@@ -1,0 +1,11 @@
+/* font */
+@font-face {
+    font-family: 'lux';
+    src: url(../font/luxuriousroman-regular-webfont.woff);
+}
+
+header h1 {
+    font-family: 'lux', arial, sans-serif;
+    
+}
+
