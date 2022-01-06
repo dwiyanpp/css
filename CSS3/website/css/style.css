@@ -6,6 +6,68 @@
 
 header h1 {
     font-family: 'lux', arial, sans-serif;
-    
+    font-size: 60px;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(243, 243, 243);
+    padding: 30px;
+}
+
+main {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    margin: 20px auto;
+    width: 44%;
+    height: 200px;
+    background-color: rgb(243, 243, 243);
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+main a {
+    margin-right: 80px;
+}
+
+main a img {
+    border-radius: 50%;
+}
+
+main a .m1, main a .m2, main a .m3 {
+    border: 2px solid black;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    line-height: 120px;
+    text-align: center;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgba(216, 216, 216, .5);
+    position: absolute;
+    top: 29px;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+main a p:hover {
+    opacity: 1;
+    animation: change 2s ease-in-out;
+}
+
+@keyframes change {
+    10% {
+        transform: rotate(50deg);
+    }
+
+    50% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
