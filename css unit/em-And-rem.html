@@ -9,29 +9,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
     <title>em & rem</title>
     <style>
-        html {
-            font-size: 40px;
-        }
-
         .container {
-            font-size: 28px;
-            font-family: 'Luxurious Roman', cursive;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 20px;
         }
 
         .container h1 {
-            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 48px;
         }
 
-        .container p {
-            font-size: 2rem;
+        .col-1-em, .col-2-rem {
+            width: 20%;
+            margin: auto;
+            text-align: center;
         }
+
+        /* em */
+
+        .col-1-em {
+            float: left;
+            margin-left: 30%;
+        }
+
+        .col-1-em h2 {
+            font-size: 2em;
+        }
+
+        .col-1-em p {
+            font-size: .9em;
+        }
+
+
+
+        /* rem */
+
+        .col-2-rem {
+            float: left;
+            margin-left: 40px;
+        }
+
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Hello, World!</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus ut libero architecto fuga corporis dignissimos aliquid accusantium aut eum?</p>
+        <h1>Typography</h1>
+        <div class="col-1-em">
+            <h2>em</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, repellendus? Soluta, a minus quibusdam laboriosam suscipit necessitatibus amet possimus temporibus obcaecati ex voluptatem enim iusto quis mollitia, nihil libero nulla et. Minus, quibusdam assumenda! Voluptatem ea corporis asperiores pariatur nostrum sit impedit quis eius consectetur et voluptas fugit laboriosam at, doloribus unde, illo enim doloremque beatae repellendus inventore nobis? Et, dolores? Quos dolorem tempore in expedita fuga a eius magni nisi, ex quod earum laborum dignissimos itaque aliquid placeat modi. Nesciunt, ipsa dolorum! Quaerat pariatur repellendus rem! Atque, repudiandae optio quos ea possimus placeat aliquid odit eos illum itaque cupiditate!</p>
+        </div>
+        <div class="col-2-rem">
+            <h2>rem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in nostrum quo consequatur quod magnam, ratione numquam dolorem accusamus eaque dignissimos enim porro nisi dicta! Doloribus, totam? Voluptate repudiandae labore ipsum minus excepturi. Commodi ipsam sit deleniti atque ab natus possimus recusandae, fugiat adipisci. Accusantium, tempora mollitia. Temporibus, dolor cupiditate esse nulla non culpa necessitatibus, perspiciatis et qui molestiae quidem. Vero temporibus placeat tempore illum porro a error accusantium tempora totam dolorem non autem laboriosam ducimus similique excepturi, nemo unde atque voluptate nihil iure adipisci molestiae! Suscipit doloribus explicabo harum itaque sed assumenda quod fugiat, doloremque mollitia odit eius sunt.</p>
+        </div>
     </div>
     
 </body>
