@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
     <title>em & rem</title>
     <style>
+        :root {
+            font-size: 16px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
         .container {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 20px;
@@ -30,6 +38,11 @@
         .col-1-em {
             float: left;
             margin-left: 30%;
+            border: 1px solid gray;
+            height: 500px;
+            overflow: scroll;
+            padding: 12px;
+            font-size: 12px;
         }
 
         .col-1-em h2 {
@@ -37,7 +50,7 @@
         }
 
         .col-1-em p {
-            font-size: .9em;
+            font-size: 1.5em;
         }
 
 
@@ -47,8 +60,48 @@
         .col-2-rem {
             float: left;
             margin-left: 40px;
+            border: 1px solid gray;
+            height: 500px;
+            overflow: scroll;
+            padding: 12px;
+            font-size: 48px;
         }
 
+        .col-2-rem h2 {
+            font-size: 2rem;
+        }
+
+        .col-2-rem p {
+            font-size: 1.5rem;
+        }
+
+
+
+
+        /* card */
+
+        .card {
+            width: 200px;
+            height: 350px;
+            background-color: honeydew;
+            margin: 30px auto;
+        }
+
+        .btn {
+            padding: 1em 2em;
+            border: 1px solid hotpink;
+            box-sizing: border-box;
+            background-color: hotpink;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 3em 1.8em;
+        }
+
+        .btn-sm {
+            font-size: .8em;
+        }
 
     </style>
 </head>
@@ -63,6 +116,11 @@
         <div class="col-2-rem">
             <h2>rem</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores in nostrum quo consequatur quod magnam, ratione numquam dolorem accusamus eaque dignissimos enim porro nisi dicta! Doloribus, totam? Voluptate repudiandae labore ipsum minus excepturi. Commodi ipsam sit deleniti atque ab natus possimus recusandae, fugiat adipisci. Accusantium, tempora mollitia. Temporibus, dolor cupiditate esse nulla non culpa necessitatibus, perspiciatis et qui molestiae quidem. Vero temporibus placeat tempore illum porro a error accusantium tempora totam dolorem non autem laboriosam ducimus similique excepturi, nemo unde atque voluptate nihil iure adipisci molestiae! Suscipit doloribus explicabo harum itaque sed assumenda quod fugiat, doloremque mollitia odit eius sunt.</p>
+        </div>
+        <div class="clear"></div>
+        <div class="card">
+            <a href="#" class="btn">Klik Disini!</a>
+            <a href="#" class="btn btn-sm">Klik Disini!</a>
         </div>
     </div>
     
