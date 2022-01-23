@@ -10,32 +10,166 @@
             margin: 0; padding: 0; box-sizing: border-box;
         }
 
-        .container {
+        /* animasi */
+        @keyframes colors {
+            from {
+                background-color: bisque;
+            }
+
+            to {
+                background-color: rgb(138, 138, 248);
+                opacity: .8;
+            }
+        }
+
+        .flexDirection {
             width: 80%;
-            height: 150px;
             border: 5px solid rgba(14, 7, 7, .5);
             display: flex;
             margin: 2em auto;
-            flex-direction: row-reverse;
+            flex-direction: row; /* row, row-reverse, columnn, column-reverse */
         }
 
-        .container div {
+        .flexDirection .flexdir {
             text-align: center;
-            line-height: 100px;
-            width: 100px;
-            height: 100px;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
             margin: 1em;
-            background-color: rgb(241, 145, 193);
+            animation: colors 2s forwards;
         }
+
+        /* flex wrap */
+        .flexWrap {
+            width: 80%;
+            border: 5px solid rgba(14, 7, 7, .5);
+            margin: 2em auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flexWrap .flxwrp {
+            text-align: center;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            margin: 1em;
+            background-color: darkkhaki;
+        }
+
+
+        /* justify-content */
+        .justifyContent {
+            width: 80%;
+            border: 5px solid rgba(14, 7, 7, .5);
+            margin: 2em auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .justifyContent .justCont {
+            text-align: center;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            margin: 1em;
+            background-color: gold;
+            opacity: .8;
+        }
+
+
+
+
+
+        /* align-items */
+        .alignItem {
+            width: 80%;
+            height: 600px;
+            border: 5px solid rgba(14, 7, 7, .5);
+            margin: 2em auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .alignItem .atem {
+            text-align: center;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            margin: 1em;
+            background-color: gold;
+            opacity: .8;
+        }
+
+
+
+        /* align-content */
+        .alignContent {
+            width: 80%;
+            border: 5px solid rgba(14, 7, 7, .5);
+            margin: 2em auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+
+        .alignContent .tiga {
+            width: 800px;
+        }
+
+        .alignContent .alignCont {
+            text-align: center;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            margin: 1em;
+            background-color: gold;
+            opacity: .8;
+        }
+
+        
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="satu">1</div>
-        <div class="dua">2</div>
-        <div class="tiga">3</div>
-        <div class="empat">4</div>
+    <div class="flexDirection">
+        <div class="flexdir satu">1 (flex-direction)</div>
+        <div class="flexdir dua">2 (flex-direction)</div>
+        <div class="flexdir tiga">3 (flex-direction)</div>
+        <div class="flexdir empat">4 (flex-direction)</div>
+    </div>
+
+    <div class="flexWrap">
+        <div class="flxwrp satu">1 (flex-wrap)</div>
+        <div class="flxwrp dua">2 (flex-wrap)</div>
+        <div class="flxwrp tiga">3 (flex-wrap)</div>
+        <div class="flxwrp empat">4 (flex-wrap)</div>
+        <div class="flxwrp lima">5 (flex-wrap)</div>
+        <div class="flxwrp lima">6 (flex-wrap)</div>
+    </div>
+
+    <div class="justifyContent">
+        <div class="justCont satu">1 (justify-content)</div>
+        <div class="justCont dua">2 (justify-content)</div>
+        <div class="justCont tiga">3 (justify-content)</div>
+        <div class="justCont empat">4 (justify-content)</div>
+    </div>
+
+    <div class="alignItem">
+        <div class="atem satu">1 (align-item)</div>
+        <div class="atem dua">2 (align-item)</div>
+        <div class="atem tiga">3 (align-item)</div>
+        <div class="atem empat">4 (align-item)</div>
+    </div>
+
+    <div class="alignContent">
+        <div class="alignCont satu">1 (align-content)</div>
+        <div class="alignCont dua">2 (align-content)</div>
+        <div class="alignCont tiga">3 (align-content)</div>
+        <div class="alignCont empat">4 (align-content)</div>
+        <div class="alignCont lima">5 (align-content)</div>
+        <div class="alignCont lima">6 (align-content)</div>
     </div>
     
 </body>
