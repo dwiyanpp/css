@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        :root {
+            font-size: 14px;
+        }
+
+        * {
+            margin: 0; padding: 0; box-sizing: 0;
+        }
+
+        /* order */
+
+        .Order {
+            width: 80%;
+            border: 5px solid rgb(155, 55, 55);
+            margin: 2em auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .order {
+            width: 150px;
+            height: 150px;
+            margin: 2em;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 150px;
+            background-color: rgb(80, 207, 165);
+        }
+
+        .Order .dua {
+            order: 2;
+        }
+
+        .Order .satu {
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Order">
+        <div class="order satu">1 (order)</div>
+        <div class="order dua">2 (order)</div>
+        <div class="order tiga">3 (order)</div>
+        <div class="order empat">4 (order)</div>
+    </div>
+    
+</body>
+</html>
