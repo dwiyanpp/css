@@ -17,11 +17,12 @@
         /* order */
 
         .Order {
-            width: 80%;
+            width: 60%;
             border: 5px solid rgb(155, 55, 55);
             margin: 2em auto;
             display: flex;
             justify-content: center;
+            align-items: stretch
         }
 
         .order {
@@ -35,11 +36,60 @@
         }
 
         .Order .dua {
-            order: 2;
+            order: -2;
         }
 
-        .Order .satu {
-            order: 3;
+
+
+        /* flex-grow */
+        .flexGrow {
+            width: 60%;
+            border: 5px solid rgb(155, 55, 55);
+            margin: 2em auto;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .flexGrow .flex-grow {
+            height: 150px;
+            margin: 2em;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 150px;
+            background-color: rgb(80, 207, 165);
+        }
+
+        .flexGrow .dua {
+            flex-grow: 3;
+        }
+
+        .flexGrow .satu {
+            flex: 2;
+        }
+
+
+
+        /* align-self */
+        .alignSelf {
+            width: 60%;
+            height: 450px;
+            border: 5px solid rgb(155, 55, 55);
+            margin: 2em auto;
+            display: flex;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+
+        .alignSelf .align-self {
+            margin: 1em;
+            text-align: center;
+            background-color: rgb(80, 207, 165);
+            flex-grow: 1;
+        }
+
+        .alignSelf .dua {
+            align-self: center;
         }
     </style>
 </head>
@@ -52,5 +102,20 @@
         <div class="order empat">4 (order)</div>
     </div>
     
+
+    <div class="flexGrow">
+        <div class="flex-grow satu">1 (flex-grow)</div>
+        <div class="flex-grow dua">2 (flex-grow)</div>
+        <div class="flex-grow tiga">3 (flex-grow)</div>
+        <div class="flex-grow empat">4 (flex-grow)</div>
+    </div>
+
+
+    <div class="alignSelf">
+        <div class="align-self satu">1 (align-self)</div>
+        <div class="align-self dua">2 (align-self)</div>
+        <div class="align-self tiga">3 (align-self)</div>
+        <div class="align-self empat">4 (align-self)</div>
+    </div>
 </body>
 </html>
