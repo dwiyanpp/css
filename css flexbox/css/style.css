@@ -15,16 +15,33 @@ body {
 }
 
 main {
-    flex: 1;
+    flex: 3;
     order: 2;
+    padding: 20px;
 }
 
 aside {
     flex: 1;
+    padding: 20px;
 }
 
 .menu {
     order: 1;
+    border: 1px solid gray;
+    padding-top: 3.5em;
+    background-color: rgb(105, 163, 165);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(73, 72, 72, .8);
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(255, 248, 248);
 }
 
 .selengkapnya {
@@ -33,5 +50,91 @@ aside {
 
 main h2 {
     text-align: center;
+}
+
+
+
+/* responsive */
+@media (max-width: 600px) {
+    .container-satu {
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        line-height: 1.5;
+    }
+
+    main h2 {
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        padding-top: 1em;
+    }
+
+    .menu ul li a {
+        font-size: 1rem;
+    }
+
+    aside.menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+    }
+
+    .selengkapnya h3 {
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+/* phone large */
+@media (max-width: 768px) {
+    .container-satu {
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        line-height: 1.5;
+    }
+
+    main h2 {
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        padding-top: 1em;
+    }
+
+    .menu ul li a {
+        font-size: 1rem;
+    }
+
+    aside.menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+    }
+
+    .selengkapnya h3 {
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 768px) {
+    .container-satu {
+        display: flex;
+    }
+
+
 }
 
