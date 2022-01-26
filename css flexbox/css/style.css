@@ -138,3 +138,54 @@ main h2 {
 
 }
 
+
+
+
+
+/* container dua */
+.container-dua {
+    width: 80%;
+    background-color: burlywood;
+    margin: 2em auto;
+    padding: 32px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    border-radius: 1em;
+    box-shadow: 2px 4px 3px 0 rgb(228, 195, 195);
+    display: flex;
+}
+
+.p-1, .p-2, .p-3 {
+    text-indent: 2em;
+    color: rgb(39, 39, 39);
+    font-size: 1.2rem;
+    padding: 12px;
+}
+
+.p-1 p {
+    background-color: rgb(165, 165, 165);
+    flex-grow: 1;
+}
+
+.p-2 p {
+    flex-grow: 7;
+    border: 1px solid gray;
+}
+
+.p-3 p {
+    flex-grow: 1;
+}
+
+
+
+/* responsive */
+
+@media (max-width: 600px) {
+    .container-dua {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
