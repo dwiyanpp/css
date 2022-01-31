@@ -10,8 +10,8 @@
             margin: 2em auto;
             width: 60%;
             display: grid;
-            grid-template-columns: 100px 100px 40%;
-            grid-template-rows: 200px auto 25px;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            grid-template-rows: 3fr 3fr 3fr;
         }
 
         .items {
@@ -19,10 +19,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 50px;
         }
 
         .items:nth-child(odd) {
-            background-color: salmon;
+            background-color: rgba(250, 128, 114, 0.041);
         }   
     </style>
 </head>
@@ -32,12 +33,15 @@
         <div class="items">1</div>
         <div class="items">2</div>
         <div class="items">3</div>
+        <div class="items">+</div>
         <div class="items">4</div>
         <div class="items">5</div>
         <div class="items">6</div>
+        <div class="items">-</div>
         <div class="items">7</div>
         <div class="items">8</div>
         <div class="items">9</div>
+        <div class="items">=</div>
     </div>
     
 </body>
