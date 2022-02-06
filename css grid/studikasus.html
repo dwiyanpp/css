@@ -19,6 +19,7 @@
 
         img {
             width: 100%;
+            background-size: cover;
         }
 
         .gallery {
@@ -29,6 +30,26 @@
             border: 5px solid #fff;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+        }
+
+
+
+
+
+
+        .g-2 {
+            margin-top: 3em;
+        }
+
+        .gallery-2 {
+            width: 500px;
+            margin: 2em auto;
+            list-style: none;
+            border: 4px dashed #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 2px 0 #000;
+            display: grid;
+            grid-template-columns: repeat(autofit, minmax(50px, 1fr));
         }
     </style>
 </head>
@@ -57,6 +78,13 @@
                 <li><img src="img/8.jpg" alt=""></li>
                 <li><img src="img/9.jpg" alt=""></li>
                 <li><img src="img/10.jpg" alt=""></li>
+            </ul>
+
+
+            <h2 class="g-2">Gallery</h2>
+            <ul class="gallery-2">
+                <li><img src="img/4.jpg" alt=""></li>
+                <li><img src="img/5.jpg" alt=""></li>
             </ul>
         </div>
         
