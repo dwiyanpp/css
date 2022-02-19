@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid item</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+            grid-template-rows: repeat(3, 100px);
+            gap: 3px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-1 {
+            background-color: aquamarine;
+
+
+            /* grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3; */
+            
+            /* === shorthand === */
+            /* grid-column: 2 / 3;
+            grid-row: 2 / 3; */
+
+
+
+
+            /* grid-column-start: 1;
+            grid-column-end: span 3;
+            grid-row-start: 1;
+            grid-row-end: 2; */
+
+            /* === shorthand === */
+            /* grid-column: 1 / span 3;
+            grid-row: 1 / 2; */
+
+
+
+
+            /* grid-column-start: -1;
+            grid-column-end: -2;
+            grid-row-start: -2;
+            grid-row-end: -3; */
+
+            /* === shorthand === */
+            grid-column: -1 / -2;
+            grid-row: -2 / -3;
+
+        }
+
+        .box-2 {
+            background-color: aquamarine;
+            justify-self: end;
+        }
+
+        .box-3 {
+            background-color: aquamarine;
+            align-self: end;
+        }
+
+        .box-4 {
+            background-color: aquamarine;
+            place-self: center end; /*row column*/
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+    </div>
+    
+</body>
+</html>
