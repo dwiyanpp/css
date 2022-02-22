@@ -3,6 +3,24 @@ body {
 }
 
 
+// membuat variabel pada SASS
+$text-primary : aqua;
+$text-secondary : rgb(119, 119, 119);
+$text-add : #fff;
+
+// membuat variabel pakai map
+$background: (
+    'background-primary' :rgba(204, 197, 197, .2),
+    'background-secondary' : rgb(151, 150, 150)
+);
+
+$font-size: (
+    'font-h1' : 48px,
+    'font-h2' : 32px,
+    'font-h3' : 28px,
+    'font-p' : 16px
+);
+
 // ===== nesting atau bersarang pada SASS =====
 main {
     text-align: center;
@@ -11,9 +29,9 @@ main {
         width: 80%;
         margin: auto;
         padding: 18px;
-        background-color: rgba(204, 197, 197, .2);
         border-radius: 4px;
         transition: all 1.2s;
+        background-color: map-get($background, 'background-secondary' );
     }
 
     &:hover {
@@ -22,16 +40,32 @@ main {
 
     & .main-heading h1 {
         font-size: 3rem;
-        color: aqua;
+        color: $text-primary;
     }
 
     & .main-middle p {
         font-size: 1.1rem;
+        color: $text-add;
     }
 }
 
 footer {
     text-align: center;
 
+    .container & {
+        width: 80%;
+        padding: 21px;
+        margin: 2em auto;
+        background-color: map-get($background, 'background-primary');
+    }
 
+    .footer-heading h1 {
+        color: $text-primary;
+        font-size: map-get($font-size, 'font-h1');
+    }
+
+    .footer-middle p {
+        font-size: map-get($font-size, 'font-p');
+        color: $text-secondary;
+    }
 }

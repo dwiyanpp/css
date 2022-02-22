@@ -10,10 +10,10 @@ main {
   width: 80%;
   margin: auto;
   padding: 18px;
-  background-color: rgba(204, 197, 197, 0.2);
   border-radius: 4px;
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
+  background-color: #979696;
 }
 
 main:hover {
@@ -28,9 +28,27 @@ main .main-heading h1 {
 
 main .main-middle p {
   font-size: 1.1rem;
+  color: #fff;
 }
 
 footer {
   text-align: center;
+}
+
+.container footer {
+  width: 80%;
+  padding: 21px;
+  margin: 2em auto;
+  background-color: rgba(204, 197, 197, 0.2);
+}
+
+footer .footer-heading h1 {
+  color: aqua;
+  font-size: 48px;
+}
+
+footer .footer-middle p {
+  font-size: 16px;
+  color: #777777;
 }
 /*# sourceMappingURL=main.css.map */
