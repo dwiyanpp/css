@@ -1,0 +1,36 @@
+body {
+  background-color: #fff;
+}
+
+main {
+  text-align: center;
+}
+
+.container main {
+  width: 80%;
+  margin: auto;
+  padding: 18px;
+  background-color: rgba(204, 197, 197, 0.2);
+  border-radius: 4px;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+
+main:hover {
+  -webkit-box-shadow: 0 2px 2px #535353;
+          box-shadow: 0 2px 2px #535353;
+}
+
+main .main-heading h1 {
+  font-size: 3rem;
+  color: aqua;
+}
+
+main .main-middle p {
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
