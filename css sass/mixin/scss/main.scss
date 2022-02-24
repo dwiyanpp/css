@@ -1,0 +1,38 @@
+// mixin
+@mixin inline-list {
+    ul {
+        margin: 0; padding: 10px;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+@mixin text-decoration {
+    a {
+        text-decoration: none
+    }
+}
+
+
+
+// variabel
+$color-link : (
+    'color-primary' : #fff
+);
+
+$background : (
+    'bg-primary' : rgb(211, 147, 147)
+);
+
+.header {
+    @include inline-list();
+
+    ul {
+        background-color: map-get($background, 'bg-primary');
+    }
+
+    @include text-decoration();
+}
