@@ -1,3 +1,5 @@
-.footer ul {
-    @include inline-list(space-around, underline);
+@use 'modules/mixin' as m;
+
+footer ul {
+    @include m.inline-list(space-around, underline);
 }

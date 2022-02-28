@@ -1,5 +1,7 @@
+@use 'modules/mixin' as m;
+
 .header ul {
-    @include inline-list(center);
+    @include m.inline-list(center);
 }
 
 

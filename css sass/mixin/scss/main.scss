@@ -1,10 +1,14 @@
 
-@import 'modules/variable';
-@import 'modules/mixin';
-@import 'modules/header';
-@import 'modules/footer';
+// @import 'modules/variable';
+// @import 'modules/mixin';
+// @import 'modules/header';
+// @import 'modules/footer';
 
+// @import 'modules/variable', 'modules/mixin', 'modules/header', 'modules/footer';
 
+@use 'modules/variable';
+@use 'modules/header';
+@use 'modules/footer';
 
 
 
