@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,34 +25,6 @@
 
 .header ul a {
   text-decoration: none;
-}
-
-.footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-  width: 100%;
-  background-color: #dfc8df;
-}
-
-.footer ul li {
-  display: inline-block;
-}
-
-.footer ul a {
-  text-decoration: underline;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 header {
@@ -72,5 +51,26 @@ header .container-sk {
   height: 300px;
   position: absolute;
   top: 0;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+  background-color: #dfc8df;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
+.footer ul a {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */

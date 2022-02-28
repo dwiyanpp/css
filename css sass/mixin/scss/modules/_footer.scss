@@ -1,0 +1,3 @@
+.footer ul {
+    @include inline-list(space-around, underline);
+}

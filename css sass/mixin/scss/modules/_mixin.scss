@@ -1,0 +1,37 @@
+// mixin & argument
+@mixin inline-list($flexBox: row, $decoration: none) {
+    display: flex;
+    justify-content: $flexBox;
+    margin: 0; padding: 10px;
+    list-style: none;
+    width: 100%;
+    background-color: rgb(223, 200, 223);
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: $decoration;
+}
+}
+
+
+
+
+
+
+
+
+// ====== studi kasus =====
+
+// mixin & include
+@mixin position($positi: static) {
+    position: $positi;
+}
+
+@mixin flex-box($display-just: flex-start, $display-align: flex-start) {
+    display: flex;
+    justify-content: $display-just;
+    align-items: $display-align;
+}

@@ -1,85 +1,11 @@
-// mixin & argument
-@mixin inline-list($flexBox: row, $decoration: none) {
-        display: flex;
-        justify-content: $flexBox;
-        margin: 0; padding: 10px;
-        list-style: none;
-        width: 100%;
-        background-color: rgb(223, 200, 223);
 
-    li {
-        display: inline-block;
-    }
-
-    a {
-        text-decoration: $decoration;
-    }
-}
-
-
-// variabel
-$color-link : (
-    'color-primary' : #fff
-);
-
-$background : (
-    'bg-primary' : rgb(211, 147, 147)
-);
-
-.header ul {
-    @include inline-list(center);
-}
-
-.footer ul {
-    @include inline-list(space-around, underline);
-}
+@import 'modules/variable';
+@import 'modules/mixin';
+@import 'modules/header';
+@import 'modules/footer';
 
 
 
 
 
 
-
-
-
-
-// ====== studi kasus =====
-
-// mixin & include
-@mixin position($positi: static) {
-    position: $positi;
-}
-
-@mixin flex-box($display-just: flex-start, $display-align: flex-start) {
-    display: flex;
-    justify-content: $display-just;
-    align-items: $display-align;
-}
-
-// var
-$background-primary : (
-    'background-color' : green
-);
-
-* {
-    padding: 0; margin: 0;
-    box-sizing: border-box;
-}
-
-header {
-    @include flex-box(center, center);
-
-    .hero-img {
-        width: 100%;
-        background-size: cover;
-        height: 100vh;
-    }
-
-    .container-sk {
-        background-color: map-get($background-primary, 'background-color');
-        width: 600px;
-        height: 300px;
-        @include position(absolute);
-        top: 0;
-    }
-}

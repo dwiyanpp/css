@@ -1,0 +1,25 @@
+.header ul {
+    @include inline-list(center);
+}
+
+
+
+
+// ===== studi kasus =====
+header {
+    @include flex-box(center, center);
+
+    .hero-img {
+        width: 100%;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .container-sk {
+        background-color: map-get($background-primary, 'background-color');
+        width: 600px;
+        height: 300px;
+        @include position(absolute);
+        top: 0;
+    }
+}
