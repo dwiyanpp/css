@@ -1,0 +1,8 @@
+.container {
+  max-width: 800px;
+  height: 600px;
+  background-color: aliceblue;
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=main.css.map */
